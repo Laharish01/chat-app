@@ -18,10 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="app-header">
-        React Chat
-        
-      </header>
+      
       { socket ? (
         <div className="chat-container">
           
