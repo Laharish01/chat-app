@@ -8,7 +8,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io(`http://${window.location.hostname}:4200`);
+    const newSocket = io(`http://localhost:4200`);
     
     setSocket(newSocket);
     console.log(newSocket)
