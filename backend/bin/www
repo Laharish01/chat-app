@@ -23,7 +23,7 @@ var server = http.createServer(chat);
 var io = socketio(server,{
   cors: {
     origin: '*',
-    methods: ['GET', 'POST']
+    
   }
 });
 chat(io);

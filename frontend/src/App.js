@@ -9,6 +9,7 @@ function App() {
 
   useEffect(() => {
     const newSocket = io(`https://chat-app-bobble.herokuapp.com:4200`);
+    
     //add comment
     
     setSocket(newSocket);
