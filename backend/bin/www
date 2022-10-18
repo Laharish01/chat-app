@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 
-// var app = require('../app');
 var chat = require('../chat')
 var socketio = require('socket.io')
 var debug = require('debug')('backend:server');
@@ -15,13 +14,12 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '4200');
-// app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+var server = http.createServer(chat);
 var io = socketio(server,{
   cors: {
     origin: '*',
