@@ -8,7 +8,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io(`https://chat-app-bobble.herokuapp.com:4200`);
+    const newSocket = io(`https://chat-app-bobble.herokuapp.com:12536`);
     //add comment
     
     setSocket(newSocket);
